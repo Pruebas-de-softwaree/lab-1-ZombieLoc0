@@ -27,11 +27,17 @@ class UserManager:
 
 
 if __name__ == "__main__":
+
+    
     user_manager = UserManager()
 
-    for i in range(10):
+    for i in range(1000):
         user_manager.add_user(i,f"Yo soy el num: {i}")
+    start= time.time()
 
-    avrg_usr = user_manager.average_user_id()
+    user_500 = user_manager.find_user(500)
 
+    end=time.time()
+
+    totalTime = end - start
     print("end")
