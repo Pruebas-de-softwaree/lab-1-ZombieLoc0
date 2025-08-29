@@ -35,4 +35,7 @@ if __name__ == "__main__":
     for i in range(500):
         print(user_manager.find_user(i))
 
+    for i in range(0, 499, 2):
+        user_manager.delete_user(i)
+
     print("end")
