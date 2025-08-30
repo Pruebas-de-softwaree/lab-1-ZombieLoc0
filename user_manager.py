@@ -33,11 +33,7 @@ if __name__ == "__main__":
 
     for i in range(1000):
         user_manager.add_user(i,f"Yo soy el num: {i}")
-    start= time.time()
+    
+    user_manager.delete_user(1000)
 
-    user_500 = user_manager.find_user(500)
-
-    end=time.time()
-
-    totalTime = end - start
     print("end")
