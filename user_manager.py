@@ -31,9 +31,10 @@ if __name__ == "__main__":
     
     user_manager = UserManager()
 
-    for i in range(1000):
+    for i in range(10):
         user_manager.add_user(i,f"Yo soy el num: {i}")
-    
-    user_manager.delete_user(1000)
+
+    user_manager.add_user(1,f"Yo soy el num: 1")
+    user = user_manager.find_user(1)
 
     print("end")
